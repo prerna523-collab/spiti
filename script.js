@@ -257,20 +257,57 @@ function openModal(modalId) {
             </ul>
         `;
     } else if (modalId === 'insurance') {
-        modalBody.innerHTML = `
-            <h3>Travel Insurance by ASEGO</h3>
-            <p>All participants are covered under comprehensive travel insurance provided by ASEGO.</p>
-            <h4>Coverage includes:</h4>
-            <ul>
-                <li>Medical emergencies up to ₹1,00,000</li>
-                <li>Accidental death and disability</li>
-                <li>Trip cancellation/interruption</li>
-                <li>Emergency evacuation</li>
-                <li>Personal effects coverage</li>
-            </ul>
-            <p><strong>Note:</strong> Pre-existing medical conditions must be declared at the time of booking.</p>
-        `;
-    }
+    modalBody.innerHTML = `
+        <h3><strong>Travel Insurance Policy by ASEGO</strong></h3>
+        <p><strong>1. Insurance Provider</strong><br>
+        We are not an insurance provider. We act solely as a facilitator to offer travel insurance services provided by ASEGO Insurance. All policies are issued, managed, and underwritten by ASEGO. We do not hold any liability for the acceptance, rejection, settlement, or denial of any claims under the policy.</p>
+
+        <p><strong>2. Coverage Overview (As per ASEGO's Policy)</strong><br>
+        Insurance coverage is provided directly by ASEGO and may include:</p>
+        <ul>
+            <li>Trip Cancellation or Interruption</li>
+            <li>Medical Emergencies</li>
+            <li>Emergency Evacuation</li>
+            <li>Baggage Loss or Delay</li>
+            <li>Travel Delay</li>
+            <li>Accidental Death & Dismemberment</li>
+        </ul>
+
+        <p><strong>3. Policy Terms</strong><br>
+        Actual benefits, limits, and terms of coverage are subject to the policy issued by ASEGO. Customers are advised to carefully review the ASEGO policy document before purchasing.</p>
+
+        <p><strong>4. Claims & Support</strong><br>
+        All claims must be filed directly with ASEGO Insurance. We will not be involved in the processing, tracking, or outcome of any insurance claim. For claims, support, or assistance, contact ASEGO directly:</p>
+        <p>
+            ASEGO Insurance Support<br>
+            Phone: +91 22 67872 037<br>
+            Email: <a href="mailto:claims@asego.in">claims@asego.in</a><br>
+            Website: <a href="https://asego.in/claim-and-assistance" target="_blank">https://asego.in/claim-and-assistance</a>
+        </p>
+
+        <p><strong>5. Exclusions & Limitations</strong><br>
+        Coverage exclusions, waiting periods, and claim conditions are defined solely by ASEGO. We bear no responsibility for:</p>
+        <ul>
+            <li>Rejected or delayed claims</li>
+            <li>Changes in policy terms by ASEGO</li>
+            <li>Service quality or customer support provided by ASEGO</li>
+        </ul>
+
+        <p><strong>6. Policy Cancellation & Refunds</strong><br>
+        Cancellation and refund terms are governed by ASEGO's policy. We cannot initiate, process, or guarantee any refund or cancellation of insurance once purchased.</p>
+
+        <p><strong>7. Disclaimer</strong><br>
+        By purchasing insurance through us, you acknowledge that:</p>
+        <ul>
+            <li>We are not liable for any claims, decisions made by ASEGO</li>
+            <li>All disputes, issues, or grievances must be resolved directly with ASEGO</li>
+            <li>You are responsible for understanding the terms and scope of the insurance before purchase</li>
+        </ul>
+
+        <p><strong>8. Governing Law</strong><br>
+        These terms are governed by the laws of India. Any legal disputes related to insurance must be directed to ASEGO in accordance with their policy terms.</p>
+    `;
+}
 }
 
 function closeModal(modalId) {
